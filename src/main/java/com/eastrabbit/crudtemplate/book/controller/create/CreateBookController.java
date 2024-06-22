@@ -8,19 +8,12 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("book")
 @RequiredArgsConstructor
- class CreateBookController {
-    private final CreateBookUesCase createBookUesCase;
+class CreateBookController {
+  private final CreateBookUesCase createBookUesCase;
 
-
-    @PostMapping("v1/create")
-     void create(@RequestBody CreateBookRequest createBookRequest) {
-        createBookUesCase.create(createBookRequest);
-    }
-
-
-     CreateBookUesCaseInput map(CreateBookRequest createBookRequest){
-
-
-    }
-
+  @PostMapping("v1/create")
+  void create(@RequestBody CreateBookRequest createBookRequest) {
+    CreateBookUesCaseInput createBookUesCaseInput = CreateBookRequestMapper.map(createBookRequest);
+    createBookUesCase.create(createBookUesCaseInput);
+  }
 }

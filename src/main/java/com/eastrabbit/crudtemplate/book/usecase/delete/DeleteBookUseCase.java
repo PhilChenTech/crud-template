@@ -4,8 +4,5 @@ import com.eastrabbit.crudtemplate.book.usecase.BookServiceException;
 
 public interface DeleteBookUseCase {
 
-
-
-    void delete(DeleteBookUseCaseInput deleteBookUseCaseInput) throws BookServiceException;
-
+  void delete(DeleteBookUseCaseInput deleteBookUseCaseInput);
 }

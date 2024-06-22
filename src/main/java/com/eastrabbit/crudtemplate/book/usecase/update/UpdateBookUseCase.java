@@ -6,7 +6,7 @@ import com.eastrabbit.crudtemplate.book.usecase.BookServiceException;
 public interface UpdateBookUseCase {
 
 
-    UpdateBookUseCaseOutput update(UpdateBookUseCaseInput updateBookRequest) throws BookServiceException;
+    UpdateBookUseCaseOutput update(UpdateBookUseCaseInput updateBookRequest) ;
 
 
 }

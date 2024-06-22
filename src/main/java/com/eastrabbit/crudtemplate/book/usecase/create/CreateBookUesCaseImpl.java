@@ -2,7 +2,7 @@ package com.eastrabbit.crudtemplate.book.usecase.create;
 
 
 import com.eastrabbit.crudtemplate.book.entity.BookEntity;
-import com.eastrabbit.crudtemplate.repository.BookRepository;
+import com.eastrabbit.crudtemplate.book.repository.BookRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
