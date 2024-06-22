@@ -1,4 +1,4 @@
-package com.eastrabbit.crudtemplate.entity;
+package com.eastrabbit.crudtemplate.book.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

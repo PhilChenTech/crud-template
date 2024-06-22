@@ -1,4 +1,4 @@
-package com.eastrabbit.crudtemplate.service;
+package com.eastrabbit.crudtemplate.book.usecase;
 
 import lombok.Getter;
 
